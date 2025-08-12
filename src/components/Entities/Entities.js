@@ -4,7 +4,7 @@ import './Entities.css';
 import { useParams } from 'react-router';
 
 const Entities = ({ getCategoryData }) => {
-  const { category  } = useParams();
+  const { category } = useParams();
 
   return (
     <div className="entity-list">

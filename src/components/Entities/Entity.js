@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Entity.css';
 
 const Entity = ({ name, img, level ,category}) => {
@@ -9,7 +9,9 @@ const Entity = ({ name, img, level ,category}) => {
       <div className="info">
         <h2>{name}</h2>
         <p>Level: {level}</p>
+        <Link to={`/wiki/${category}/${encodeURI(name)}`}>
         <h2>Description</h2>
+        </Link>
       </div>
     </div>
   );
